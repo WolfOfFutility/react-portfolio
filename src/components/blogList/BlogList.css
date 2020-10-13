@@ -1,0 +1,28 @@
+.blog-list-box {
+    height: 73.6vh;
+    width: 100%;
+    order: 2;
+    flex-grow: 1;
+    background-color: #555;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.blog-box {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #333;
+}
+
+.date-box {
+    height: 100%;
+    width: 20%;
+    order: 1;
+    background-color: lightgreen;
+    color: white;
+    line-height: 20vh;
+}

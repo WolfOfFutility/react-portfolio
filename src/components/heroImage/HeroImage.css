@@ -1,0 +1,33 @@
+.hero-image-box {
+    height: 73.6vh;
+    width: 100%;
+    flex-grow: 1;
+    order: 1;
+
+    background-color: #555;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.title-area {
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.description-area {
+    width: 100%;
+    position: absolute;
+    bottom: 5vh;
+    font-size: 180%;
+    color: white;
+    text-align: center;
+}

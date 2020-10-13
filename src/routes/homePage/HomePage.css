@@ -3,3 +3,12 @@
     width: 100vw;
     background-color: #EEE;
 }
+
+.main-area-box {
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
