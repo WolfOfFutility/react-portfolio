@@ -1,0 +1,53 @@
+.blog-banner-box {
+    height: 35vh;
+    width: 90vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    background: #333;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
+.blog-title {
+    height: 100%;
+    flex-grow: 1;
+    order: 1;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    line-height: 35vh;
+}
+
+.blog-section {
+    min-height: 50vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.section-heading {
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    color: #333;
+    font-size: 180%;
+    text-align: left;
+}
+
+.section-subheading {
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    color: #333;
+    font-size: 150%;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.section-text {
+    min-height: 10vh;
+    width: 100%;
+    text-align: left;
+    text-indent: 20px;
+}

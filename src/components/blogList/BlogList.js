@@ -3,12 +3,16 @@ import "./BlogList.css"
 
 import Blog from "./Blog"
 
+import {Link} from "react-router-dom"
+
 class BlogList extends React.Component {
     constructor(props) {
         super(props)
         this.state={
             blogsArray: []
         }
+
+        
     }
 
     componentDidMount() {
@@ -26,7 +30,16 @@ class BlogList extends React.Component {
 
     renderBlogs() {
         return this.state.blogsArray.map((blog, key) => {
-            return <Blog key={key} date={blog.Date} title={blog.Title} author={blog.Author} />
+            return <Link 
+                    key={key} 
+                    to={{
+                        pathname: "/Blogs",
+                        state: {
+                            blog: {...blog}
+                        }
+                    }}
+                    style={{textDecoration: "none"}}
+                ><Blog date={blog.Date} title={blog.Title} author={blog.Author} /></Link>
         })
     }
 
