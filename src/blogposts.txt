@@ -1,0 +1,15 @@
+Starting this website
+-------
+
+The entire point of this website is to showcase the ability to create a website that looks good, conveys meaning 
+and is easy to use. This website would need to be easily scalable, have decent functionality, 
+and effectively utilise the components/routes that React is leveraged upon. 
+
+Planning phase
+--- 
+
+This website started off how most things do, in the planning phase. Basic functionality was planned out such as the menu,
+what pages there would be?, what components would be needed? Once that was done, I needed a colour scheme - something simple,
+like, blue, white and (dark) grey; all of which are easy to use neutral colours. Next, I set out to create a few sketches of what
+i wanted on each page - blog post lists, a top menu, a list of projects, etc. I then translated these over into Adobe XD, where i
+made a few other sketch ups. 
