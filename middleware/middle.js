@@ -168,6 +168,37 @@ var posts = [
             }
         ]
     },
+    {
+        "Date": "16 OCT",
+        "Title": "Adding projects to the project list",
+        "Author": "Ceejay Kelly",
+        "Sections": [
+            {
+                "type": "title",
+                "text": "The Planning Phase"
+            },
+            {
+                "type": "text",
+                "text": "filler text 1"
+            },
+            {
+                "type": "subtitle",
+                "text": "Added this subtitle"
+            },
+            {
+                "type": "text",
+                "text": "filler text 2"
+            },
+            {
+                "type": "text",
+                "text": "filler text 3"
+            },
+            {
+                "type": "subtitle",
+                "text": "subtitle 2"
+            }
+        ]
+    },
 ]
 
 app.use(function(req, res, next) {
