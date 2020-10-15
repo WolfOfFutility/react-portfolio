@@ -15,7 +15,6 @@ class BlogsPage extends React.Component {
         for(var x in this.state.blog.Sections) {
             var blogItems = []
             blogItems.push(this.state.blog.Sections)
-            console.log(blogItems)
         }
 
         return blogItems[0].map((item, key) => {
@@ -33,9 +32,30 @@ class BlogsPage extends React.Component {
                 return (
                     <ul key={key} className="section-list">
                         {item.items.map((list, key) => {
-                            return <li className="section-list-item">{list}</li>
+                            return <li key={key} className="section-list-item">{list}</li>
                         })}
                     </ul>
+                )
+            }
+            else if(item.type === "image") {
+                var customwidth = 0;
+                var customheight = 0;
+
+                if(item.size === "small") {
+                    customwidth = "40%"
+                    customheight = "50vh"
+                }
+                else if(item.size === "medium") {
+                    customwidth = "60%"
+                    customheight = "50vh"
+                }
+                else {
+                    customwidth = "100%"
+                    customheight = "50vh"
+                }
+
+                return (
+                <div key={key} className="section-image" style={{backgroundImage: "url(" + item.url + ")", width: customwidth, height: customheight, float: item.location, marginLeft: item.leftIndent}}><p>{item.caption}</p></div>
                 )
             }
             else {

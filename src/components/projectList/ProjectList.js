@@ -9,30 +9,30 @@ const ProjectList = () => {
             <Project 
                 id="1"
                 name="Portfolio Website" 
-                description="A project made with React, designed as a portfolio website." 
+                description="A project made with ReactJs, designed as a portfolio website." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
-                img="https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg" 
+                img="./img/portfolio-website-thumbnail.png" 
             />
             <Project 
                 id="2"
                 name="Stock Market Bot" 
                 description="A project made with Python, designed as a stock market bot." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
-                img="https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg" 
+                img="./img/stock-market-thumbnail.png" 
             />
             <Project 
                 id="3"
-                name="Project 3" 
-                description="A project made with React, designed as a portfolio website." 
+                name="Block&amp;Block Website" 
+                description="A Project made using ReactJs, for a small business based in Brisbane called Block&amp;Block." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
-                img="https://cdn.pixabay.com/photo/2018/05/18/15/30/webdesign-3411373_960_720.jpg" 
+                img="./img/block-and-block-thumbnail.png" 
             />
             <Project 
                 id="4"
-                name="Project 4" 
-                description="A project made with React, designed as a portfolio website." 
+                name="Weather Forecast Website" 
+                description="A Project made using NodeJs, which allows for a user to search a location, and the current and future weather forecast for that area will be shown." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
-                img="https://cdn.pixabay.com/photo/2017/06/26/08/14/laptop-2443052_960_720.jpg" 
+                img="./img/weather-website-thumbnail.png" 
             />
         </div>
     )

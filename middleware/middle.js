@@ -57,6 +57,14 @@ var posts = [
                 "text": "Blog List Component"
             },
             {
+                "type": "image",
+                "size": "small",
+                "leftIndent": "20px",
+                "location": "center",
+                "url": "https://cdn.pixabay.com/photo/2020/07/23/17/54/mountain-5431950_960_720.png",
+                "caption": "Blog list component example"
+            },
+            {
                 "type": "text",
                 "text": "The blog list component is designed to render a list of all the blogs that I've posted on the homepage, which can then be used to navigate to this page, where individual blog information is rendered."
             },
@@ -75,6 +83,14 @@ var posts = [
             {
                 "type": "subtitle",
                 "text": "Project List Component"
+            },
+            {
+                "type": "image",
+                "size": "small",
+                "leftIndent": "20px",
+                "location": "center",
+                "url": "https://cdn.pixabay.com/photo/2020/10/11/20/15/floating-islands-5646926_960_720.jpg",
+                "caption": "Project List Component example"
             },
             {
                 "type": "text",

@@ -19,7 +19,7 @@
     height: 100%;
     width: 40%;
 
-    background-color: #333;
+    /* background-color: #333; */
     background-blend-mode: soft-light;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 }
 
 .project-showcase-image:hover {
-    background-color: #111;
+    background-color: #555;
 }
 
 .project-description {
