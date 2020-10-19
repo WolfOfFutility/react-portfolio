@@ -1,0 +1,45 @@
+.backend-login-backing {
+    position: fixed;
+    z-index: 100000;
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+}
+
+.backend-login-modal {
+    position: fixed;
+    z-index: 100001;
+    height: 60vh;
+    width: 30vw;
+    background: #CCC;
+    margin-left: 35vw;
+    margin-top: 10vh;
+}
+
+.modal-title-area {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-title-text {
+    height: 100%;
+    width: 90%;
+    order: 1;
+    line-height: 6vh;
+}
+
+.modal-close-area {
+    height: 100%;
+    width: 10%;
+    order: 2;
+    line-height: 6vh;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-close-area:hover {
+    background: dodgerblue;
+    color: white;
+}

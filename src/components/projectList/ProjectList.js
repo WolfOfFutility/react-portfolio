@@ -16,7 +16,7 @@ const ProjectList = () => {
             <Project 
                 id="2"
                 name="Block &amp; Block Website" 
-                description="A Project made using ReactJs, for a small business based in Brisbane called Block&amp;Block." 
+                description="A Project made using ReactJs, for a small business based in Brisbane called Block&amp;Block. Currently live at www.blockandblock.com.au." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
                 img="./img/block-and-block-thumbnail.png" 
             />
@@ -61,6 +61,13 @@ const ProjectList = () => {
                 description="A project created early into my learning of Python. This is a rough task scheduler, built using Python and TKinter." 
                 githubLink="https://github.com/WolfOfFutility/react-portfolio" 
                 img="./img/python-scheduling-thumbnail.png" 
+            />
+            <Project 
+                id="9"
+                name="Audio Visualisation App" 
+                description="A project created used ElectronJS, allows the importing of MP3s and MP4s, queueing songs, and playing them with a visualisation of the song frequencies." 
+                githubLink="https://github.com/WolfOfFutility/react-portfolio" 
+                img="./img/audio-vis-thumbnail.png" 
             />
             
         </div>

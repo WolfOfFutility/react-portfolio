@@ -25,14 +25,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    box-shadow: -1px 3px 10px 1px rgb(0,0,0,0.6);
+    /* box-shadow: -1px 3px 10px 1px rgb(0,0,0,0.6); */
+    box-shadow: -1px 15px 30px 1px rgb(0,0,0,0.6);
     cursor: pointer;
     transition: 0.5s;
 }
 
 .project-showcase-image:hover {
     background-color: #555;
-    box-shadow: -1px 15px 30px 1px rgb(0,0,0,0.6);
+    /* box-shadow: -1px 15px 30px 1px rgb(0,0,0,0.6); */
 }
 
 .project-description {
@@ -48,7 +49,7 @@
     height: 10vh;
     margin-top: 2vh;
     text-align: left;
-    text-indent: 10px;
+    text-indent: 20px;
     font-size: 180%;
 }
 
@@ -60,7 +61,7 @@
 }
 
 .project-desc-text p {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .project-button-group {
@@ -70,6 +71,7 @@
     flex-direction: row;
     position: absolute;
     bottom: 0;
+    left: 10px;
 }
 
 .project-button {

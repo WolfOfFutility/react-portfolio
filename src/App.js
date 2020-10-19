@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import HomePage from "./routes/homePage/HomePage"
 import ProjectsPage from "./routes/projectsPage/ProjectsPage"
 import BlogsPage from "./routes/blogsPage/BlogsPage"
+import BlogCreation from "./routes/blogCreation/BlogCreation"
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/Blogs">
             {props => <BlogsPage {...props}/> }
+          </Route>
+          <Route path="/blogcreator">
+            {props => <BlogCreation {...props} />}
           </Route>
         </Switch>
       </Router>

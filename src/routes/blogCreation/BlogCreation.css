@@ -1,0 +1,132 @@
+.blog-creation-box {
+    height: 72vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    background: #333;
+}
+
+.blog-name-box {
+    height: 7%;
+    width: 100%;
+    background: lightgreen;
+}
+
+.blog-name-box input {
+    height: 70%;
+    width: 20%;
+    float: left;
+}
+
+.item-type-selection {
+    height: 10%;
+    width: 100%;
+    position: relative;
+    background: #CCC;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-type {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 7.2vh;
+    cursor: pointer;
+}
+
+.item-type:hover {
+    background: dodgerblue;
+}
+
+.content-creation-section {
+    height: 80.5%;
+    width: 100%;
+    position: relative;
+    /* background: lightblue;   */
+    display: flex;
+    flex-direction: row;
+}
+
+.content-creation-main {
+    order: 1;
+    width: 100%;
+    /* background: rgb(0,0,0,0.2); */
+    height: 100%;
+}
+
+.content-creation-text {
+    height: 90%;
+    width: 100%;
+}
+
+.content-to-add {
+    order: 2;
+    width: 30%;
+    background: rgb(0,0,0,0.5);
+}
+
+.create-button-area {
+    height: fill;
+    width: 100%;
+    /* background: #555; */
+}
+
+.create-button {
+    height: 40px;
+    width: 110px;
+    background: dodgerblue;
+    /* margin: 10px; */
+    margin-left: 10px;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+    float: left;
+}
+
+.create-button:hover {
+    box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.4);
+    background-color: #333;
+}
+
+.save-blog-button {
+    height: 40px;
+    width: 110px;
+    background: dodgerblue;
+    /* margin: 10px; */
+    margin-left: 10px;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+    float: left;
+}
+
+.save-blog-button:hover {
+    box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.4);
+    background-color: #333;
+}
+
+.indiv-content-item {
+    height: 10vh;
+    width: 100%;
+    background: #555;
+    border-bottom: 0.5px solid #CCC;
+}
+
+.indiv-content-type {
+    height: 40%;
+    width: 100%;
+    line-height: 4vh;
+    color: white;
+    background: rgb(0,0,0,0.2);
+}
+
+.indiv-content {
+    height: 60%;
+    width: 100%;
+    line-height: 6vh;
+    color: white;
+}

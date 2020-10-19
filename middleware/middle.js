@@ -199,6 +199,76 @@ var posts = [
             }
         ]
     },
+    {
+        "Date": "16 OCT",
+        "Title": "Existing projects on the go",
+        "Author": "Ceejay Kelly",
+        "Sections": [
+            {
+                "type": "title",
+                "text": "The Planning Phase"
+            },
+            {
+                "type": "text",
+                "text": "filler text 1"
+            },
+            {
+                "type": "subtitle",
+                "text": "Added this subtitle"
+            },
+            {
+                "type": "text",
+                "text": "filler text 2"
+            },
+            {
+                "type": "text",
+                "text": "filler text 3"
+            },
+            {
+                "type": "subtitle",
+                "text": "subtitle 2"
+            }
+        ]
+    },
+    {
+        "Date": "19 OCT",
+        "Title": "Thinking of new C# Projects",
+        "Author": "Ceejay Kelly",
+        "Sections": [
+            {
+                "type": "title",
+                "text": "Deciding what to do"
+            },
+            {
+                "type": "text",
+                "text": "I enjoy constantly challenging myself to make the most of my abilities with different languages on a regular basis, so I brainstorm some project ideas and work on them. Like most projects, it's a difficulty at first to understand exactly what it is that you are trying to achieve. I personally believe that, when making personal projects, it shouldbe based around something that you will actually USE. In the spirit of that, whenever I make projects, they are typically centered around productivity, idea generation, innovation and research. Here's a few ideas I've come up with that match some of these categories."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Time/Task Management System",
+                    "Audio Streaming Program",
+                    "Video Streaming Program",
+                    "COVID-19 Log In/Log Out Tracker"
+                ]
+            },
+            {
+                "type": "text",
+                "text": "In the past, I've exhaustively done projects that involved Time/Task Management, including one that I currently have on the backburner, built in React Native, so that's a no go. I've already completed a project to do with Audio Visualisation in Electron, so that, too, is a no go. That just leave the COVID-19 Tracker and the Video Streaming Program, both of which are particularly relevant with the current goings-on."
+            }
+        ]
+    },
+]
+
+var users = [
+    {
+        "Username": "ceejuser",
+        "Password": "pass"
+    },
+    {
+        "Username": "ceejadmin",
+        "Password": "pass"
+    }
 ]
 
 app.use(function(req, res, next) {
@@ -207,15 +277,31 @@ app.use(function(req, res, next) {
     next()
 });
 
+app.get("/login", (req, res) => {
+    var queryUsername = req.query.user
+    var queryPassword = req.query.pass
+
+    var responseArray = users.filter(user => user["Username"] == queryUsername && user["Password"] == queryPassword)[0]
+    if(responseArray != null) {
+        res.send(responseArray)
+    }
+    else {
+        res.send([])
+    }
+    
+})
+
 app.get("/createPost", (req, res) => {
     var queryDate = req.query.date
     var queryTitle = req.query.title
     var queryAuthor = req.query.author
+    var querySections = JSON.parse(req.query.sections)
 
     posts.push({
         "Date": queryDate,
         "Title": queryTitle,
-        "Author": queryAuthor
+        "Author": queryAuthor,
+        "Sections": querySections
     })
 
     res.sendStatus(200)
